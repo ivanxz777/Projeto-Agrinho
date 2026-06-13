@@ -1,0 +1,133 @@
+/* =========================
+CONFIGURAÇÃO GLOBAL
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0b0f1a;
+  color: #e6e6e6;
+  line-height: 1.6;
+}
+
+/* =========================
+HEADER / NAV
+========================= */
+.header {
+  background: #0f1b33;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #1f3b73;
+}
+
+.header h1 {
+  color: #4da3ff;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav a {
+  color: #e6e6e6;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #1f3b73;
+  color: #4da3ff;
+}
+
+/* =========================
+LAYOUT PRINCIPAL
+========================= */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: #111a2e;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #111a2e;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border-left: 4px solid #4da3ff;
+}
+
+/* =========================
+SOBRE
+========================= */
+.about {
+  background: #111a2e;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* =========================
+GALERIA
+========================= */
+.gallery h2 {
+  margin-bottom: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.photo {
+  background: #111a2e;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid #1f3b73;
+  color: #4da3ff;
+}
+
+/* =========================
+FOOTER
+========================= */
+.footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  background: #0f1b33;
+  border-top: 2px solid #1f3b73;
+  font-size: 14px;
+}
+
+/* =========================
+RESPONSIVIDADE
+========================= */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .hero {
+    padding: 25px 15px;
+  }
+}
